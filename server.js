@@ -3,9 +3,9 @@ require('dotenv').config()
 const express = require ("express")
 const mongoose = require('mongoose')
 
-require('./models/Job');
-require('./models/Application');
-require('./models/User');
+require('./models/job');
+require('./models/application');
+require('./models/user');
 
 const app = express()
 
