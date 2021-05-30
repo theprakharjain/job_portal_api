@@ -1,10 +1,10 @@
 # Job Portal API
 
-Job portal API provides a API interface to the basic functionalities of a Job Portal. The API uses MongoDB database and is built in NodejS. It uses JWT for the verification.
+Job portal API provides an API interface to the basic functionalities of a Job Portal. The API uses MongoDB database and is built in NodejS. It uses JWT for the verification.
 
 ## API End Points
 
-Guide to API endpoints can be accessed via "".
+Guide to API endpoints can be accessed via "https://drive.google.com/file/d/1E_kqEFut4pfddGOy4nUIKSO6y3WIaBxc/view?usp=sharing".
 
 API URL: `http://prakharjain.org/jobportalapi/`
 Header: `authToken`
