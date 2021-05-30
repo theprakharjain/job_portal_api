@@ -1,0 +1,144 @@
+GET http://localhost:3000/jobs
+
+###
+
+POST http://localhost:3000/jobs
+Content-Type: application/json
+authToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGIzOGRhOGRlN2MxMTQ1NDBjMGQ5MWYiLCJpYXQiOjE2MjIzODAzMDYsImV4cCI6MTYyMjM4MzkwNn0.-Ymna5x_N4FnFmtrkqLKuu9s6vcHPh-z0rVcTChyw9M
+
+{
+    "companyName": "Flipkart",
+    "jobRole": "Senior Web Developer",
+    "skills": "Java, Springboot",
+    "jobType": "Permanent",
+    "experienceMin": 6,
+    "experienceMax": 9
+}
+
+###
+
+POST http://localhost:3000/jobs
+Content-Type: application/json
+authToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGIzOGU3YmRlN2MxMTQ1NDBjMGQ5MjEiLCJpYXQiOjE2MjIzODA3MDMsImV4cCI6MTYyMjM4NDMwM30._GibGjL5aa4xjdAs7CuHc728stBiykyLNRJU3RU_gRQ
+
+{
+    "companyName": "SAP",
+    "jobRole": "Web Developer",
+    "skills": "python, nodejs",
+    "jobType": "Part-time",
+    "experienceMin": 9,
+    "experienceMax": 12
+}
+
+###
+
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+    "role": "candidate",
+    "name": "Ritesh Shrivastave",
+    "email": "ritesh@shrivastave.com",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+
+    "email": "suresh@mantri.com",
+    "password": "123456"
+
+}
+
+###
+
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+
+    "email": "ritesh@shrivastave.com",
+    "password": "123456"
+
+}
+
+###
+
+POST  http://localhost:3000/applications/60b390dfde7c114540c0d929
+Content-Type: application/json
+authToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGIzOGU5OGRlN2MxMTQ1NDBjMGQ5MjIiLCJpYXQiOjE2MjIzODA5MTAsImV4cCI6MTYyMjM4NDUxMH0.nbkOcvSIODHKNj5kaZnqAGDVNI-j8AXLiGy8RlSbmqc
+
+{
+    "status": "reject"
+}
+
+###
+
+POST  http://localhost:3000/applications/60b390dfde7c114540c0d929
+Content-Type: application/json
+authToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGIzOGVjMmRlN2MxMTQ1NDBjMGQ5MjMiLCJpYXQiOjE2MjIzODE0MDMsImV4cCI6MTYyMjM4NTAwM30.ghh7leruNOTCitTJkrW04t3z3Tcvl1CAakNMpfJEliI
+
+{
+    "status": "reject"
+}
+
+###
+
+DELETE http://localhost:3000/applications/60b39016de7c114540c0d927
+Content-Type: application/json
+authToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGIyNTYzYmM5ZmIwYzNjYjgzODY3ZDQiLCJpYXQiOjE2MjIzMTc5NDV9.CtJ9NoA2JmreTgKaDnXq7sURwydkJCfukQygNo-DwF4
+
+###
+
+GET http://localhost:3000/jobs/60b2330539dddd44c0e7f824/application/60b29bb572f55c08ac5b8c6b
+authToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGIyNTYzYmM5ZmIwYzNjYjgzODY3ZDQiLCJpYXQiOjE2MjIzMTc5NDV9.CtJ9NoA2JmreTgKaDnXq7sURwydkJCfukQygNo-DwF4
+
+###
+
+PATCH http://localhost:3000/jobs/60b38fb7de7c114540c0d926/application/60b3939b54247e26aca40d24/accept
+authToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGIzOGU3YmRlN2MxMTQ1NDBjMGQ5MjEiLCJpYXQiOjE2MjIzODA3MDMsImV4cCI6MTYyMjM4NDMwM30._GibGjL5aa4xjdAs7CuHc728stBiykyLNRJU3RU_gRQ
+
+###
+
+GET http://localhost:3000/jobs/status/open
+authToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGIzMWI2ZmFjYmNlMjM1NzA5MTZmOTUiLCJpYXQiOjE2MjIzNTA3MzV9.sTkUHN4kwpY0rGfV4dUjUWj8FvV2qkp__YURSkcpAVs
+
+###
+
+GET http://localhost:3000/jobs/status/open
+authToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOnsiX2lkIjoiNjBiMzFiNmZhY2JjZTIzNTcwOTE2Zjk1IiwiaWF0IjoxNjIyMzY3MjE1fSwiaWF0IjoxNjIyMzY3MjQ0LCJleHAiOjE2MjIzNjcyNjR9.wTRCb3T8oXFW_MahHrZ8t9DwVtWojFrc7u9NsIS81Qw
+
+###
+
+GET http://localhost:3000/applications
+authToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGIzMWI2ZmFjYmNlMjM1NzA5MTZmOTUiLCJpYXQiOjE2MjIzNjcxMDAsImV4cCI6MTYyMjM2NzEyMH0.QJCHnZquZ87L8xPiA-ahAmi4gmLgnpXfPRf3AtLpNeg
+
+###
+
+
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+
+    "email": "abc@example.com",
+    "password": "123456"
+
+}
+
+###
+
+POST http://localhost:3000/users/refreshtoken
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGIzMWI2ZmFjYmNlMjM1NzA5MTZmOTUiLCJpYXQiOjE2MjIzNjcyMTV9.t7RHlkvnHo8NqrTlf8oh7zXAnvO_VtgiwgvpxYuJYCc"
+}
+
+###
+
+DELETE http://localhost:3000/users/logout
