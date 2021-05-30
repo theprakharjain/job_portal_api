@@ -6,7 +6,7 @@ Job portal API provides an API interface to the basic functionalities of a Job P
 
 Guide to API endpoints can be accessed via "https://drive.google.com/file/d/1E_kqEFut4pfddGOy4nUIKSO6y3WIaBxc/view?usp=sharing".
 
-API URL: `http://prakharjain.org/jobportalapi/`
+API URL: `http://prakharjain.org/jobportalapi/jobs`
 Header: `authToken`
 
 ## API Test Data Dump
