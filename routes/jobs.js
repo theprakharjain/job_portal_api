@@ -1,15 +1,16 @@
 const express = require('express')
 const router = express.Router()
+const mongoose = require('mongoose');
 const { getJob, getApplication, isRecruiter } = require('../utils/utils')
 const { authorizedToken } = require('../authorization/tokenVerification');
 const { jobInputValidation } = require('../authorization/inputValidation');
 
 // Load Job Model
-const Job = require('../models/Job')
+const Job = mongoose.model('Job')
 // Load Application Model
-const Application = require('../models/Application')
+const Application = mongoose.model('Application')
 // Load User Model
-const User = require('../models/User')
+const User = mongoose.model('User')
 
 
 // Getting all Listed Jobs - No Authentication Required

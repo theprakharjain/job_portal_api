@@ -2,10 +2,11 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const mongoose = require('mongoose');
 const { registerValidation, loginValidation } = require('../authorization/inputValidation');
 
 // Load User model
-const User = require('../models/User');
+const User = mongoose.model('User')
 
 // Array to save refresh tokens -> will be empty as soon as server restarts
 // In production we'll use db
