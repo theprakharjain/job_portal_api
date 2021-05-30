@@ -1,6 +1,11 @@
-const Job = require('../models/Job')
-const Application = require('../models/Application')
-const User = require('../models/User')
+const mongoose = require('mongoose');
+
+// Load Job Model
+const Job = mongoose.model('Job')
+// Load Application Model
+const Application = mongoose.model('Application')
+// Load User Model
+const User = mongoose.model('User')
 
 async function getJob(req, res, next) {
   let job
