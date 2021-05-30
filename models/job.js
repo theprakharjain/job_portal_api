@@ -33,10 +33,4 @@ const jobSchema = new mongoose.Schema({
 }, {timestamps: true})
 
 
-module.exports = mongoose.model('Job', jobSchema)
-
-// ,
-//     datePosted: {
-//         type: Date,
-//         default: Date.now
-//     }
+module.exports = mongoose.model('Job', jobSchema);
